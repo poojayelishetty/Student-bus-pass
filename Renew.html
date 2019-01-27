@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Renewal form</title>
+<link rel="stylesheet" type="text/css" href="home.css">
+<script src="renewvalid.js"></script>
+</head>
+<body>
+ <form name="myForm2" action="Home.html" onsubmit="return validateForm()" method="post">
+  <h2>Online Bus Pass Renewal</h2>
+   <fieldset>
+         <legend>Details</legend>
+         <table>
+         <tr> <td> <h4>Name*:</h4> </td>
+         <td> <input type="text" name="name"> </td></tr>
+         <tr> <td> <h4>Roll no.(1602-1x-xxx-xxx)*:</h4> </td>
+         <td> <input type="text" name="rollno"> </td></tr>
+          </table>   
+    </fieldset>
+    <input type="submit" value="Submit">
+ </form>
+</body>
+</html>
