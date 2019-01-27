@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="home.css">
+<title>Application</title>
+<script src="Validation.js"></script>
+</head>
+<body>
+   <form name="myForm" action="Home.html" onsubmit="return validateForm()" method="post">
+     <h2>BUS PASS APPLICATION</h2>
+       <fieldset>
+         <legend>1.Student 10th Details</legend>
+         <table>
+         <tr> <td> <h4>SSC Board Type*:</h4> </td>
+         <td> <select>
+             <option>SSC</option>
+             <option>CBSE</option>
+          </select></td></tr>
+          <tr> <td> <h4>SSC Regular/Supplementary*:</h4> </td>
+         <td> <select>
+             <option>Regular</option>
+             <option>Supplementary</option>
+          </select></td></tr>  
+          <tr> <td> <h4>SSC Year of Pass*:</h4> </td>
+         <td> <input type="text" name="pyear"></td></tr> 
+         <tr> <td> <h4>SSC hall ticket no.*:</h4> </td>
+         <td> <input type="text" name="hticket"></td></tr>
+         <tr> <td> <h4>Date of Birth(dd/mm/yyyy)*:</h4> </td>
+         <td> <input type="text" name="dob"></td></tr>
+          </table>
+       </fieldset>
+       <br>
+       <fieldset>
+         <legend>2.Student Details</legend>
+         <table>
+         <tr> <td> <h4>Name*:</h4> </td>
+         <td> <input type="text" name="name"> </td></tr>
+         <tr> <td> <h4>Roll no.(1602-1x-xxx-xxx)*:</h4> </td>
+         <td> <input type="text" name="rollno"> </td></tr>
+          </table>   
+       </fieldset>
+       <br>
+       <fieldset>
+         <legend>2.Route Details</legend>
+         <table>
+         <tr> <td> <h4>Boarding Point*:</h4> </td>
+         <td> <input type="text" name="bpoint"> </td></tr>
+         <tr> <td> <h4>Pass Type Required*:</h4> </td>
+         <td> <input type="radio" checked="checked" name="radio"> General <input type="radio" name="radio"> Exclusive  </td></tr>
+          </table>   
+       </fieldset><br><br>
+       <input type="submit" value="Submit">
+   </form>
+</body>
+</html>
